@@ -19,4 +19,8 @@ router.get('/', function (req, res) {
 // test
 router.route('/GET/prediction').get(pythonController.grade_prediction);
 
+// predict
+router.route('/POST/prediction').post(pythonController.prediction);
+
+
 module.exports = router;
